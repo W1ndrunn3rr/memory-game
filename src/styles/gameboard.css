@@ -3,8 +3,8 @@
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     grid-column-gap: 150px;
     grid-row-gap: 170px;
-    animation: showUp linear 0.7s;
 }
+
 
 @keyframes showUp {
     from {
@@ -24,10 +24,10 @@
 
 .game-card > h1 {
     margin: 5px;
-    padding: 2px;
+    padding: 1px;
     color: #130225;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     background-color: white;
     border: 1px solid black;
     text-align: center;
@@ -40,3 +40,38 @@
     cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+    .game-card {
+        scale : 1.6
+    }
+    .game-board{
+        grid-column-gap: 80px;
+        grid-row-gap: 100px;
+    }
+}
+
+/* Adjust grid for small screens */
+@media (max-width: 800px) {
+    .game-board{
+        grid-column-gap: 60px;
+        grid-row-gap: 80px;
+    }
+    .game-card {
+        scale : 1.4
+    }
+
+}
+
+/* Adjust grid for very small screens */
+@media (max-width: 500px) {
+    .game-board{
+        grid-template: 1fr 1fr 1fr / 1fr  1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .game-card {
+        scale : 1
+    }
+
+
+}
