@@ -1,0 +1,42 @@
+.game-board {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-column-gap: 150px;
+    grid-row-gap: 170px;
+    animation: showUp linear 0.7s;
+}
+
+@keyframes showUp {
+    from {
+        opacity: 0;}
+    to { opacity: 1;}
+}
+
+.game-card {
+    scale: 2;
+    border-radius: 5px;
+    background-image: url("images/background.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-card > h1 {
+    margin: 5px;
+    padding: 2px;
+    color: #130225;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.game-card:hover {
+    box-shadow: 1px 1px 5px black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+

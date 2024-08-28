@@ -1,0 +1,23 @@
+.score-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    max-width: 400px;
+    overflow: hidden;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.score-div > h1 {
+    color : black;
+    font-weight: bold;
+    font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
